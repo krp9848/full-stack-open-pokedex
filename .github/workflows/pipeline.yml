@@ -33,3 +33,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: 'viewpokedex'
           heroku_email: 'kabirajpant@gmail.com'
+          healthcheck: 'https://viewpokedex.herokuapp.com/health'
+          checkstring: 'ok'
+          rollbackonhealthcheckfailed: true
